@@ -3,7 +3,6 @@ title: Отримуйте бонуси за рекомендацію!
 category: Акції
 categoryUrl: /internet
 date: 2026-03-26
-description: Рекомендуйте ФАВОРИТ друзям або сусідам та отримуйте вигоду за кожне підключення.
 image: /images/news/referalna-programa-bonus-na-rahunok.jpg
 ---
 

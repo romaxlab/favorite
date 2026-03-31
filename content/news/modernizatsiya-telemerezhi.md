@@ -2,7 +2,6 @@
 title: Модернізація телемережі — більше каналів у HD якості!
 category: Оголошення
 date: 2026-03-27
-description: Оновлення телемережі ФАВОРИТ - більше HD-каналів, краща якість зображення та стабільний сигнал.
 image: /images/news/modernizatsiya-telemerezhi.png
 ---
 
