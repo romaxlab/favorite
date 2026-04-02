@@ -48,11 +48,8 @@ const helpItems = [
     <!-- Contact cards + Map -->
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 mb-12">
       <div class="flex flex-col gap-4">
-        <ContactItem
-          v-for="(contact, i) in contacts"
-          :key="i"
-          v-bind="contact"
-        />
+        <ContactItem v-for="(contact, i) in contacts" :key="i" v-bind="contact"/>
+        <ContactQuickMessengers />
       </div>
 
       <div class="lg:col-span-2">
