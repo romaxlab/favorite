@@ -3,7 +3,7 @@ interface Plan {
   name: string;
   description: string;
   price: string;
-  speed: string;
+  speed?: string;
   features: string[];
   category: string;
   type: string;

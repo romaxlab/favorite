@@ -5,7 +5,6 @@ export const internetPlans: Plan[] = [
     description: "Оплата раз на рік — більше комфорту, менше турбот",
     price: "1500 грн",
     priceUnit: "/рік",
-    speed: "до 200 Мбіт/с",
     badge: "Акція",
     features: [
       "Оплата раз на рік",
