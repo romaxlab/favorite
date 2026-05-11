@@ -8,4 +8,6 @@ interface Plan {
   category: string;
   type: string;
   isRecommended: boolean;
+  badge?: string;
+  priceUnit?: string;
 }

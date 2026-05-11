@@ -5,7 +5,7 @@ useSeoMeta({
   title: 'Головна',
   description: 'Фаворит ТВ/НЕТ — інтернет-провайдер у Ходорові та регіоні. Швидкий інтернет, цифрове та кабельне телебачення.',
   ogTitle: 'Фаворит ТВ/НЕТ — Інтернет та телебачення у Ходорові',
-  ogDescription: 'Швидкий інтернет до 1 Гбіт/с, цифрове та кабельне ТБ. Підключення від 200 грн/міс.',
+  ogDescription: 'Швидкий інтернет до 1 Гбіт/с, цифрове та кабельне ТБ. Підключення від 250 грн/міс.',
   ogImage: '/images/slides/seo_banner.png',
 })
 
@@ -13,7 +13,7 @@ const trustBlocks = [
   { icon: 'i-heroicons-bolt-20-solid', value: 'до 1 Гбіт/с', label: 'Швидкість' },
   { icon: 'i-heroicons-map-pin-20-solid', value: '23 локації', label: 'Покриття' },
   { icon: 'i-heroicons-phone-20-solid', value: 'Підтримка', label: 'Пн–Сб' },
-  { icon: 'i-heroicons-banknotes-20-solid', value: 'від 200 грн', label: 'На місяць' },
+  { icon: 'i-heroicons-banknotes-20-solid', value: 'від 250 грн', label: 'На місяць' },
 ]
 
 const selectedSettlement = ref('')
@@ -68,11 +68,11 @@ const { data: latestPosts } = await useAsyncData('latest-posts', async () => {
 <template>
   <div>
     <!-- Hero -->
-    <section class="relative overflow-hidden bg-gradient-to-br from-slate-950 via-blue-950 to-cyan-950">
+    <section class="relative overflow-hidden bg-linear-to-br from-slate-950 via-blue-950 to-cyan-950">
       <div class="absolute inset-0 overflow-hidden pointer-events-none">
         <div class="absolute -top-48 -right-48 w-[600px] h-[600px] bg-blue-500/15 rounded-full blur-[150px]" />
         <div class="absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-cyan-400/10 rounded-full blur-[130px]" />
-        <div class="absolute top-1/2 left-1/3 w-[600px] h-[600px] bg-blue-600/[0.04] rounded-full blur-[180px]" />
+        <div class="absolute top-1/2 left-1/3 w-[600px] h-[600px] bg-blue-600/4 rounded-full blur-[180px]" />
       </div>
       <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.015)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-[size:60px_60px] pointer-events-none" />
 
@@ -83,13 +83,13 @@ const { data: latestPosts } = await useAsyncData('latest-posts', async () => {
               Інтернет від ФАВОРИТ <br> швидкий та стабільний
             </h1>
             <p class="mt-7 text-lg leading-relaxed text-blue-100/65 max-w-md">
-              Стабільне оптоволоконне з'єднання до 1 Гбіт/с, цифрове та кабельне телебачення. Оптимальні тарифи від 200 грн/міс.
+              Стабільне оптоволоконне з'єднання до 1 Гбіт/с, цифрове та кабельне телебачення. Оптимальні тарифи від 250 грн/міс.
             </p>
             <div class="flex flex-wrap items-center gap-3 sm:gap-4 mt-10">
               <UButton
                 label="Підключити інтернет"
                 size="xl"
-                class="cursor-pointer !rounded-xl !border-0 !bg-gradient-to-r !from-blue-600 !via-sky-500 !to-cyan-500 !text-white !font-semibold !px-10 !shadow-lg !shadow-cyan-500/25 !ring-1 !ring-white/20 hover:!-translate-y-0.5 hover:!shadow-xl hover:!shadow-cyan-400/35 active:!translate-y-0 active:!scale-[0.98] !transition-all !duration-200"
+                class="cursor-pointer rounded-xl! border-0! bg-linear-to-r! from-blue-600! via-sky-500! to-cyan-500! text-white! font-semibold! px-10! shadow-lg! shadow-cyan-500/25! ring-1! ring-white/20! hover:-translate-y-0.5! hover:shadow-xl! hover:shadow-cyan-400/35! active:translate-y-0! active:scale-[0.98]! transition-all! duration-200!"
                 @click="scrollToConnectForm"
               />
             </div>
@@ -102,7 +102,7 @@ const { data: latestPosts } = await useAsyncData('latest-posts', async () => {
                 class="relative z-10 w-full max-w-[560px] rounded-xl object-cover"
                 loading="eager"
               />
-              <div class="absolute -inset-8 bg-gradient-to-tr from-blue-500/15 via-transparent to-cyan-400/10 rounded-2xl blur-3xl" />
+              <div class="absolute -inset-8 bg-linear-to-tr from-blue-500/15 via-transparent to-cyan-400/10 rounded-2xl blur-3xl" />
             </div>
           </div>
         </div>
@@ -173,7 +173,7 @@ const { data: latestPosts } = await useAsyncData('latest-posts', async () => {
                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 loading="lazy"
               />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+              <div class="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent" />
               <div class="absolute bottom-0 left-0 right-0 p-5 text-white">
                 <div class="flex items-center gap-2 mb-1">
                   <span class="text-xs text-white/70">{{ post.date }}</span>
